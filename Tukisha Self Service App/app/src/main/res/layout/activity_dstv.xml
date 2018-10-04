@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="30dp" layout="@layout/view_toolbar"/>
+
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out"
+            android:flipInterval="4000"
+            android:autoStart="true">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="" sweet:srcCompat="@drawable/baner8"/>
+
+            <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner1"/>
+            <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner2"/>
+            <ImageView android:id="@+id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner3"/>
+            <ImageView android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner4"/>
+            <ImageView android:id="@+id/imageView6" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner5"/>
+            <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" sweet:srcCompat="@drawable/banner6"/>
+        </ViewFlipper>
+        <View
+            android:id="@+id/horizontalLine"
+            android:background="#999999"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignBottom="@+id/imageView20"/>
+
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/holo_gray_dark"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/title_name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Account Details"
+            android:scrollHorizontally="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <EditText
+                android:textSize="20sp"
+                android:textColor="@android:color/background_dark"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/editCustomerID"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Customer Number or ID Number"
+                android:freezesText="true"
+                android:layout_alignParentBottom="true"
+                android:inputType="number"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/contactButton"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="11dp"
+                android:background="@color/blue"
+                android:drawableLeft="@drawable/addpic"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:textSize="20sp"
+                android:textColor="@android:color/background_dark"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/editAmount"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:minWidth="70dp"
+                android:text=""
+                android:hint="Amount"
+                android:scrollHorizontally="true"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/messageTextView"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:minWidth="70dp"
+                android:text=""
+                android:scrollHorizontally="true"
+                android:freezesText="true"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+        </LinearLayout>
+        <Button
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/payDSTVButton"
+            android:background="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_marginBottom="10dp"
+            android:text="Retrieve customer Information" style="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+    <Button
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/gohome"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_marginBottom="10dp"
+        android:text="go home"
+        android:layout_above="@+id/btnGetMoreResults"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/btnGetMoreResults"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="10sp"
+        android:text="Traiding  Balance : R24.00  |  Cash Back : R100.00"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center" style="?android:attr/textAppearanceSmall"/>
+</RelativeLayout>

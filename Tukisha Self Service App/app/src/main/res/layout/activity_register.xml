@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_toolbar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="0.74"
+            android:contentDescription=""
+            android:src="@drawable/wepay" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center_horizontal"
+            android:hint=" Enter First Name "
+            android:inputType="text"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="70dp"
+            android:scrollHorizontally="true"
+            android:text=""
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_horizontal"
+                android:hint="Enter Surname"
+                android:inputType="text"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:minWidth="70dp"
+                android:scrollHorizontally="true"
+                android:text=""
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editIDNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_horizontal"
+                android:hint="Enter ID Number"
+                android:inputType="number"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:minWidth="70dp"
+                android:scrollHorizontally="true"
+                android:text=""
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_horizontal"
+                android:hint=" Enter Email "
+                android:inputType="text"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:minWidth="70dp"
+                android:scrollHorizontally="true"
+                android:text=""
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editCellNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center_horizontal"
+            android:hint="Enter Cell Number"
+            android:inputType="number"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="70dp"
+            android:scrollHorizontally="true"
+            android:text=""
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:minWidth="70dp"
+                android:scrollHorizontally="true"
+                android:text=""
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/tncondition"
+            android:layout_height="wrap_content"
+            android:text="Can we contact you with other promotions" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/promotion"
+            android:layout_height="wrap_content"
+            android:text=" Accept Our Terms And Conditions " />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TnCPage"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="129dp"
+                android:paddingTop="5dp"
+                android:text="Terms  and Conditions" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="2dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/TnCPage"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/policy"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:paddingTop="5dp"
+                android:layout_toEndOf="@+id/textView15"
+                android:text="Privacy Policy" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_margin="5dp"
+            android:background="@color/blue"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

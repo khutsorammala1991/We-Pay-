@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.artitech.tsalano.tukisha.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/agentid_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="0.74"
+                android:contentDescription=""
+                android:src="@drawable/wepay" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/steps"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:text="STEPS"
+
+                android:textColor="#0099cc"
+                android:textSize="20dp"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/howtoregister"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textColor="#0099cc"
+                android:layout_marginTop="16dp"
+                android:textSize="15dp"
+                android:text="1 How to register"
+ />
+            <TextView
+                android:id="@+id/logindetails"
+                style="?android:textAppearanceSmall"
+                android:textColor="#0099cc"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textSize="15dp"
+                android:layout_marginTop="16dp"
+                android:text="2 Where to get  log in details"
+                />
+            <TextView
+                android:id="@+id/topupaccount"
+                android:textColor="#0099cc"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="16dp"
+                android:textSize="15dp"
+                android:text="3 How to top up your account "
+                 />
+            <TextView
+                android:id="@+id/howtologin"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:textColor="#0099cc"
+                android:layout_marginTop="16dp"
+                android:text="4 How to log in"
+                android:textSize="15dp"
+                 />
+
+            <TextView
+                android:id="@+id/howtouseapp"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="16dp"
+                android:textColor="#0099cc"
+                android:text="5 How to Start trading "
+                android:textSize="15dp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backtologin"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:text="Back to Log In"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</RelativeLayout>

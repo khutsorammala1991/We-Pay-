@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:5-5:16
+	package
+		ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:68-100
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:15-42
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:101-159
+	android:versionCode
+		ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml:3:43-67
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+uses-sdk
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+		ADDED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml
+		INJECTED from C:\Users\rammamn\Desktop\Tukisha Self Service App pending\Tukisha Self Service App\libraries\mylib\AndroidManifest.xml

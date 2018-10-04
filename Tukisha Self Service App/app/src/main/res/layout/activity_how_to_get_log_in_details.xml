@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.artitech.tsalano.tukisha.howToGetLogInDetailsActivity">
+
+
+    <Button
+        android:id="@+id/back"
+        style="?android:textAppearanceSmall"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#0099cc"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        style="?android:textAppearanceSmall"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0099cc"
+        android:text="@string/action_sign_in"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next"
+        style="?android:textAppearanceSmall"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#0099cc"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/logindetails" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:textColor="#0099cc"
+        android:textSize="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:text="On your email account you will receive an email shown above with all your log in details  " />
+
+</RelativeLayout>

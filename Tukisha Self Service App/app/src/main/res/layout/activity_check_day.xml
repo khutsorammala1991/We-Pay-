@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.artitech.tsalano.tukisha.MyProfileActivity">
+
+
+
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:background="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
+        android:autoStart="true"
+        android:flipInterval="4000">
+
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baner8"
+            android:contentDescription="" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner3" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner6" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner1" />
+    </ViewFlipper>
+
+    <View
+        android:id="@+id/horizontalLine5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ClosingBal"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/flipper1"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+    <View
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/OpeningBalance"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+    <View
+        android:id="@+id/horizontalLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TradingFee"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+    <View
+        android:id="@+id/horizontalLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sales"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+    <View
+        android:id="@+id/horizontalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DepositedBalance"
+        android:layout_marginStart="6dp"
+        android:background="#999999" />
+
+    <TextView
+        android:id="@+id/OpeningBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_below="@+id/horizontalLine"
+        android:layout_marginTop="73dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Opening Balance :" />
+
+    <TextView
+        android:id="@+id/TradingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/DepositedBalance"
+        android:layout_below="@+id/DepositedBalance"
+        android:layout_marginTop="23dp"
+        android:text="Trading Fee :"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/DepositedBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/OpeningBalance"
+        android:layout_below="@+id/openingBal"
+        android:layout_marginTop="22dp"
+        android:text="Deposit Balance:"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/openingBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/OpeningBalance"
+        android:layout_alignBottom="@+id/OpeningBalance"
+        android:layout_alignStart="@+id/DepositBal"
+        android:hint="Display Opening Balance"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/DepositBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DepositedBalance"
+        android:layout_alignBottom="@+id/DepositedBalance"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/closingBalance"
+        android:hint="Display Deposited Balance"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/TradingFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TradingFee"
+        android:layout_alignBottom="@+id/TradingFee"
+        android:textSize="16dp"
+        android:layout_alignStart="@+id/DepositBal"
+        android:hint="Display  Trading Fee" />
+
+    <TextView
+        android:id="@+id/salesfortheday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/sales"
+        android:layout_alignBottom="@+id/sales"
+        android:layout_alignStart="@+id/TradingFees"
+        android:hint="Display Sales For The Day" />
+
+    <TextView
+        android:id="@+id/closingBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sales"
+        android:layout_below="@+id/salesfortheday"
+        android:layout_marginTop="30dp"
+        android:text="Closing Balance:"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/ClosingBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/closingBalance"
+        android:layout_alignStart="@+id/salesfortheday"
+        android:hint="Display Closing Balance" />
+
+
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blue"
+        android:text="go home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TradingFee"
+        android:layout_below="@+id/TradingFee"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+        android:text="Sales For the Day:"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/Commision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine5"
+        android:layout_below="@+id/horizontalLine5"
+        android:layout_marginTop="51dp"
+        android:text="Commision:"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/ComissionBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Commision"
+        android:layout_alignBottom="@+id/Commision"
+        android:layout_alignStart="@+id/ClosingBal"
+        android:hint="Display Comission Balance"
+        android:textSize="16dp" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:background="#fff"
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        android:autoStart="true"
+        android:flipInterval="4000"
+        tools:ignore="Suspicious0dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner1"
+            android:contentDescription="" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baner8"
+            android:contentDescription="" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner3" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner5" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner4" />
+    </ViewFlipper>
+
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#999999"/>
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="650dp">
+
+        <ImageView
+            android:id="@+id/ivVirgin"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/virgin_mobile"
+            android:layout_below="@+id/ivVodacom"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ivEskom"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/eskom"
+            android:layout_above="@+id/ivVirgin"
+            android:layout_alignEnd="@+id/ivTelkom" />
+
+        <ImageView
+            android:id="@+id/ivTelkom"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/telkom"
+            android:layout_below="@+id/ivEskom"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/unipin"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_alignBottom="@+id/ivMunicipality"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/unipin" />
+
+        <ImageView
+            android:id="@+id/ideal"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_alignStart="@+id/ivCellc"
+            android:layout_alignTop="@+id/unipin"
+            app:srcCompat="@drawable/ideal" />
+
+        <ImageView
+            android:id="@+id/protea"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:layout_alignEnd="@+id/ivMunicipality"
+            android:layout_below="@+id/ivMunicipality"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/proteametering" />
+
+<!--        <ImageView
+            android:id="@+id/ivPrasa"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/prasa"
+            android:layout_below="@+id/ivVirgin"
+            android:layout_centerHorizontal="true" />-->
+
+        <ImageView
+            android:id="@+id/ivVodacom"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+
+            app:srcCompat="@drawable/vodacom"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/ivCellc"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingRight="5dp"
+            app:srcCompat="@drawable/cell_c"
+            android:layout_above="@+id/ivMunicipality"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/ivMTN"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingRight="5dp"
+            app:srcCompat="@drawable/mtn_main_logo"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/ivMunicipality"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/municipality"
+            android:layout_below="@+id/ivVirgin"
+            android:layout_alignStart="@+id/ivVirgin" />
+
+    </RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/btnGetMoreResults"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:background="@color/blue"
+        android:text="@string/trading_balance"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

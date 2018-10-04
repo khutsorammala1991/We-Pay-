@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Support">
+
+        <menu>
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Send A Message" />
+
+        <item
+            android:id="@+id/nav_call_center"
+            android:icon="@drawable/ic_menu_phone"
+            android:title="Contact Call Centre" />
+
+        </menu>
+
+
+        </item>
+
+    </group>
+
+    <item android:title=" Financial Reports">
+        <menu>
+
+            <item
+                android:id="@+id/nav_transactionHistory"
+                android:icon="@drawable/ic_menu_money"
+                android:title="View Transaction History" />
+
+            <item
+                android:id="@+id/nav_cash_mini_statement"
+                android:icon="@drawable/ic_menu_money"
+                android:title="View Mini Statement" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Top up Trading Funds ">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_cash_back"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Using Your Cash Back" />
+
+
+        </menu>
+    </item>
+    <item android:title="Our Banking Details">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_Banking_details"
+                android:icon="@drawable/ic_menu_money"
+                android:title="Banking Details " />
+
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Settings">
+
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="My Profile" />
+
+            <item
+                android:id="@+id/nav_Beneficiaries"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Create Beneficiaries" />
+
+            <item
+                android:id="@+id/nav_EditDeleteBeneficiaries"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Edit/Delete Beneficiaries" />
+
+            <item
+
+                android:id="@+id/nav_password"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Password Reset" />
+
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="#ffffff"
+        tools:context="com.artitech.tsalano.tukisha.TandCActicity">
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignStart="@+id/registerButton"
+        android:layout_below="@+id/registerButton"
+        android:autoStart="true"
+        android:background="#fff"
+        android:flipInterval="4000"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner6" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            app:srcCompat="@drawable/baner8" />
+    </ViewFlipper>
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/flipper1"
+        android:background="#999999" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/blue"
+            android:text="Banking Details "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/gohome"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/blue"
+            android:text="Go home  "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_below="@id/flipper1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_marginTop="48dp"
+                android:text="Account Number : 409 336 4372 "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/branchcode"
+                android:layout_below="@+id/bank"
+                android:text="Bank Name  : ABSA"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/branchcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/branchname"
+                android:layout_below="@+id/textView10"
+                android:text="Branch Code : 632005"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/branchname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/branchcode"
+                android:text="Account Holder:  We Pay Rewards"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/branchname"
+                android:layout_marginStart="16dp"
+                android:text="Branch Name : Pretoria"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/textView80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginStart="16dp"
+                android:text="Use your Acount Number As a Reference Number"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/bank1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView81"
+                android:layout_below="@+id/textView81"
+                android:text="Bank Name  : FNB  "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView101"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/bank1"
+                android:layout_below="@+id/bank1"
+                android:text="Branch Code : 210529"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/branchcode1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView101"
+                android:layout_below="@+id/textView101"
+                android:text="Account Holder:  We Pay Rewards"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/branchname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/branchcode1"
+                android:layout_below="@+id/branchcode1"
+                android:text="Branch Name : Irene Mall"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/branchname20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/branchcode1"
+                android:layout_below="@+id/branchname2"
+                android:text="Use your Acount Number As a Reference Number "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/branchname"
+                android:layout_below="@+id/textView12"
+                android:text="Account Number : 6273 9152 742"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView81"
+                android:layout_below="@+id/branchname"
+                android:layout_marginTop="70dp"
+                android:text="FNB"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bank"
+                android:layout_alignStart="@+id/bank"
+                android:layout_marginBottom="20dp"
+                android:text="ABSA"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

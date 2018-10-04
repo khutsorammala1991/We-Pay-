@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.twotoasters.jazzylistview:library-1.2.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.2.1.aar/3e1b2abdb452f89e4ef75e2df33eda68/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-1.2.1.aar/3e1b2abdb452f89e4ef75e2df33eda68/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twotoasters.jazzylistview/library/1.2.1/d2ddda4fc2f73c511c80a3f86784bfb05b00c32/library-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

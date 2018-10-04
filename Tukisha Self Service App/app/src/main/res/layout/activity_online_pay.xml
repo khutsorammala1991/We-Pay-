@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:weightSum="4">
+
+    <include layout="@layout/view_toolbar" />
+
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="55dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:inAnimation="@android:anim/slide_out_right"
+        android:outAnimation="@android:anim/slide_in_left"
+        android:autoStart="true"
+        android:flipInterval="3000">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baner8"
+            android:contentDescription="" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner6" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner3" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner4" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/banner5" />
+    </ViewFlipper>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="0.05"
+        android:background="#999999" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:columnWidth="120dp"
+        android:numColumns="3"
+        android:layout_height="280px"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="spacingWidthUniform"
+        android:scrollbars="horizontal"
+        android:layout_weight="3.91" />
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        android:text="go home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnGetBalanceResults"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.10"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Trading Balance : R24   |   Cash Back : R100.00"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

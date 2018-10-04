@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/khutso"
+    tools:context="com.artitech.tsalano.tukisha.HowToUseApp">
+
+
+
+
+
+    <Button
+        android:id="@+id/back"
+        style="?android:textAppearanceSmall"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#0099cc"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        style="?android:textAppearanceSmall"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0099cc"
+        android:text="@string/action_sign_in"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ImageSwitcher
+        android:id="@+id/imageaChanger"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignEnd="@+id/login"
+        android:layout_alignParentTop="true">
+
+    </ImageSwitcher>
+
+    <Button
+        android:id="@+id/butNext"
+        android:layout_width="100dp"
+        android:layout_height="40sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageaChanger"
+        android:layout_marginTop="25dp"
+        android:background="#0099cc"
+        android:text="NEXT " />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/butNext"
+        android:textColor="#ffffff"
+        android:layout_marginTop="26dp"
+        android:text="Press NEXT to  get started and see how the app works and what it contains and how to work with it.  " />
+
+</RelativeLayout>

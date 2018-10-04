@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.artitech.tsalano.tukisha.MyProfileActivity">
+
+
+
+
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out"
+            android:autoStart="true"
+            android:flipInterval="4000">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baner8"
+                android:contentDescription="" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner3" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner4" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner5" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner6" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/banner1" />
+        </ViewFlipper>
+
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/flipper1"
+            android:layout_marginStart="6dp"
+            android:background="#999999" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surname"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:text="Name :"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/IDnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_below="@+id/surname"
+        android:text="ID Number :"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_centerVertical="true"
+        android:text="Surname:"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/Entername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/Entersurname"
+        android:hint="Display Name"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/Entersurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/surname"
+        android:layout_alignBottom="@+id/surname"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/cellNumber"
+        android:hint="Display Surname"
+        android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/Enteridnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/IDnumber"
+            android:layout_alignBottom="@+id/IDnumber"
+            android:textSize="16dp"
+            android:layout_alignStart="@+id/Entersurname"
+            android:hint="Display ID Number" />
+
+    <TextView
+        android:id="@+id/Enteremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignStart="@+id/Enteridnumber"
+        android:hint="Display Email" />
+
+    <TextView
+        android:id="@+id/cellNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_below="@+id/Enteremail"
+        android:text="Cell Number:"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/accountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_below="@+id/cellNumber"
+        android:text="Bank Dep Ref No.:"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/Entercell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/cellNumber"
+        android:layout_alignStart="@+id/Enteremail"
+        android:hint="Display Cell Number" />
+
+    <TextView
+        android:id="@+id/reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Entername"
+        android:layout_alignTop="@+id/accountNumber"
+        android:hint="Reference  Number"
+        android:textSize="16dp" />
+
+
+
+    <Button
+        android:id="@+id/gohome"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/blue"
+        android:text="go home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/horizontalLine"
+        android:layout_below="@+id/IDnumber"
+        android:text="Email:"
+        android:textSize="16dp" />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

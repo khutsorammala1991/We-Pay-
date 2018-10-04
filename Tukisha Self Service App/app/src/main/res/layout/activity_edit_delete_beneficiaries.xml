@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/view_toolbar"/>
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:background="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
+        android:flipInterval="4000"
+        android:autoStart="true">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sweet:srcCompat="@drawable/banner1"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sweet:srcCompat="@drawable/banner4"/>
+
+        <ImageView android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sweet:srcCompat="@drawable/banner5"/>
+
+        <ImageView android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sweet:srcCompat="@drawable/banner6"/>
+    </ViewFlipper>
+    <View
+        android:id="@+id/horizontalLine"
+        android:background="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/flipper1"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beneficiary List  "
+        android:layout_below="@+id/horizontalLine"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/horizontalLine"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/gohome"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:text="Go home"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center" style="?android:attr/textAppearanceSmall"/>
+
+
+</RelativeLayout>

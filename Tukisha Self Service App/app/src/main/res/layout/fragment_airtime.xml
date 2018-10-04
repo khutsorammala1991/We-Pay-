@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/invite_frag_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="40dp"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        tools:listitem="@layout/item_categories" />
+
+    <Button android:id="@+id/gohome"
+        style="?android:textAppearanceSmall"
+        android:background="@color/blue"
+        android:layout_height="35sp"
+        android:layout_width="match_parent"
+        android:text="Go Home"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>
